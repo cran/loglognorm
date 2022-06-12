@@ -47,7 +47,7 @@ vloglognorm(mean, sd)
 \author{
   Heike Trautmann \email{trautmann@statistik.uni-dortmund.de},
   Detlef Steuer \email{steuer@hsu-hamburg.de} and
-  Olaf Mersmann \email{olafm@statistik.uni-dortmund.de}
+  Olaf Mersmann \email{olafm@p-value.net}
 }
 \examples{
   x <- seq(0, 1, by=0.05)

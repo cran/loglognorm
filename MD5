@@ -1,5 +1,5 @@
-59a53dd70d896dbb3409991042ca4c74 *DESCRIPTION
-39582de059a96ca18fc2024a2504a0db *NAMESPACE
-46cfc20bf619887679a4a0c5b7043a41 *R/loglognorm.R
-81be8a5cbebf265c4d82245e1d7729da *man/dloglognorm.Rd
-68d2979860ec6080151f4a6cd7796598 *src/loglognorm.c
+16cd762330ea2b3fd75126c80c711a30 *DESCRIPTION
+661e2c3477723650590d3413a32aa977 *NAMESPACE
+218eef4d73ca15f7f78bdb3185a47c8a *R/loglognorm.R
+6bebf2fce8c3ea079f8cfe635e07bf6a *man/dloglognorm.Rd
+676578cedf256bbaf2bb28f2c91044db *src/loglognorm.c

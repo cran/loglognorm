@@ -4,27 +4,27 @@
 ## Authors:
 ##  Heike Trautmann  <trautmann@statistik.uni-dortmund.de>
 ##  Detlef Steuer    <detlef.steuer@hsu-hamburg.de>
-##  Olaf Mersmann    <olafm@statistik.uni-dortmund.de>
+##  Olaf Mersmann    <olafm@p-value.net>
 ##
 
 dloglognorm <- function(x, mean=0, sd=1)
-  .Call("dloglognorm", x, mean, sd, PACKAGE="loglognorm")
+  .Call(do_dloglognorm, x, mean, sd)
 
 ploglognorm <- function(q, mean=0, sd=1)
-  .Call("ploglognorm", q, mean, sd, PACKAGE="loglognorm")
+  .Call(do_ploglognorm, q, mean, sd)
 
 qloglognorm <- function(p, mean=0, sd=1)
-  .Call("qloglognorm", p, mean, sd, PACKAGE="loglognorm")
+  .Call(do_qloglognorm, p, mean, sd)
 
 ## FIXME: Faster way?
 rloglognorm <- function(n, mean=0, sd=1)
-  .Call("qloglognorm", runif(n), mean=mean, sd=sd, PACKAGE="loglognorm")
+  .Call(do_qloglognorm, runif(n), mean=mean, sd=sd)
 
 mloglognorm <- function(moment, mean, sd)
-  .Call("mloglognorm", moment,  mean, sd, PACKAGE="loglognorm")
+  .Call(do_mloglognorm, moment,  mean, sd)
 
 eloglognorm <- function(mean, sd)
-  .Call("mloglognorm", 1, mean, sd, PACKAGE="loglognorm")
+  .Call(do_mloglognorm, 1, mean, sd)
 
 vloglognorm <- function(mean, sd) {
   m1 <- mloglognorm(1, mean, sd)
